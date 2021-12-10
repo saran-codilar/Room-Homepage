@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/webicon.png">
+  <title>Room Homepage</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="Grid">
+    <div class="Slide1">
+      <div class="Img1">
+        <img src="/Images/slide1.jpg" class="Image1">
+      </div>
+      <div class="Img1">
+        <img src="/Images/slide2.jpg" class="Image1">
+      </div>
+      <div class="Img1">
+        <img src="/Images/slide3.jpg" class="Image1">
+      </div>
+      <div class="Menu">
+        <a><img src="/Images/logo.svg" class="Logo"></a>
+        <a href="#home">home</a>
+        <a href="#shop">shop</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+    <div class="Slide1media">
+      <div class="Img2">
+        <img src="/Images/slide1.jpg" class="Chair">
+      </div>
+      <div class="Img2">
+        <img src="/Images/slide2.jpg" class="Chair">
+      </div>
+      <div class="Img2">
+        <img src="/Images/slide3.jpg" class="Chair">
+      </div>
+      <img src="/Images/logo.svg" class="Logo">
+      <div class="dropdown">
+
+        <!-- <a href="javascript:void(0);" class="Ham" onclick="myFunction()"><img src="/Images/icon-hamburger.svg"></a> -->
+
+        <button class="dropdown"><img src="/Images/icon-hamburger.svg" class="Ham"></button>
+        <div class="dropdown-content">
+          <ol><a href="#"><img src="/Images/icon-close.svg" alt=""></a></ol>
+          <ol><a href="#">home</a></ol>
+          <ol><a href="#">shop</a></ol>
+          <ol><a href="#">about</a></ol>
+          <ol><a href="#">contact</a></ol>
+        </div>
+      </div>
+      <div>
+        <div class="Larrow">
+          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(-1)">
+            <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+          </svg>ides1ides1
+        </div>
+        <div class="Rarrow">
+          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" onclick="plusSlides(1)">
+            <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="Textcontainer">
+      <h1 class="Text1"> Discover innovative ways to decorate
+      </h1>
+      <p class="Para1"> We provide unmatched quality, comfort, and style for property owners across the country.
+        Our experts combine form and function in bringing your vision to life. Create a room in your
+        own style with our collection and make your property a reflection of you and what you love.</p>
+      <a href="shop" class="Shop">SHOP NOW</a>
+      <a href="arrow" class="Shoparrow"><img src="/Images/iconarrow.svg" alt="go"></a>
+      <div class="Arrow">
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" class="Leftarrow" onclick="plusSlides(-1)">
+          <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+        </svg>
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" class="Rightarrow" onclick="plusSlides(1)">
+          <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+    <div class="Imagecontainer">
+      <img src="/Images/mainimage1.jpg" class="Dark">
+    </div>
+    <div class="Next">
+      <p class="Header">About our furniture</p>
+      <p class="Subtext">Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+    <div class="Last">
+      <img src="/Images/mainimage2.jpg" class="White">
+    </div>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("Img1");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+      var slides1 = document.getElementsByClassName("Img2");
+      if (n > slides1.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides1.length }
+      for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none";
+      }
+      slides1[slideIndex - 1].style.display = "block";
+    }
+  </script>
+  <!-- <script>
+    function myFunction() {
+      var x = document.getElementById("dropdcontent");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script> -->
+
+
+</body>

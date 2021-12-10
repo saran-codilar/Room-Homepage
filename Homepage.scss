@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .Grid {
+    height: 35rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  /* .Slide1{
+      background-image: url("/Images/slide1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-row-start:1;
+      grid-row-end: 5;
+      grid-column-start: 1;
+      grid-column-end: 4;
+  } */
+  
+  .Image1 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+  }
+  
+  .Slide1media {
+    display: none;
+  }
+  
+  .Container {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 3%;
+    width: auto;
+  }
+  
+  .Menu {
+    position: absolute;
+  
+    a {
+      float: left;
+      font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+      color: white;
+      background-color: none;
+      text-align: center;
+      padding: 10% 15px;
+      text-decoration: none;
+      font-size: 70%;
+    }
+  }
+  
+  .Logo {
+    height: 50%;
+    width: 50%;
+    margin-left: 25px;
+  }
+  
+  .Textcontainer {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin-top: 10%;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  
+  .Text1 {
+    font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+  }
+  
+  .Para1 {
+    color: lightgray;
+    font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+    font-size: 70%;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    line-height: 150%;
+  }
+  
+  .Shop {
+    text-decoration: none;
+    font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+    color: black;
+    font-size: 70%;
+    letter-spacing: 0.7rem;
+  }
+  
+  .Shoparrow {
+    margin-left: 10%;
+  }
+  
+  .Arrow {
+    margin-top: 12.5%;
+    margin-left: -17.5%;
+    background-color: black;
+    margin-right: 87%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  
+  .Leftarrow {
+    margin-left: 22%;
+  }
+  
+  .Rightarrow {
+    margin-left: 30%;
+  }
+  
+  .Imagecontainer {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .Next {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  
+  .Header {
+    color: black;
+    font-size: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+  }
+  
+  .Subtext {
+    color: lightgray;
+    font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7.5%;
+    font-size: 73%;
+    line-height: 150%;
+  }
+  
+  .Last {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .Grid {
+      height: 100rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .Slide1 {
+      display: none;
+    }
+  
+    .Slide1media {
+      display: block;
+    }
+  
+    .Chair {
+      /* top: 0;
+      left: 0;
+      height: auto; */
+      width: 100%;
+      position: absolute;
+    }
+  
+    .Logo {
+      color: white;
+      height: 2%;
+      width: 10%;
+      position: absolute;
+      margin-left: 45%;
+      margin-top: 7%;
+    }
+  
+    .Ham {
+      height: 2%;
+      width: 5%;
+      position: absolute;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+  
+    .dropdown {
+      display: block;
+      float: left;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      z-index: 1;
+  
+      a {
+        color: black;
+        padding: 5% 3%;
+        text-decoration: none;
+        font-family: MBCorpo Title,DaimlerCAC-Regular,Helvetica,Arial,sans-serif;
+        display: block;
+        float: left;
+      }
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 8%;
+    }
+  
+    .Larrow {
+      background-color: black;
+      position: absolute;
+      margin-top: 51.5%;
+      margin-left: 73%;
+      padding: 2% 2%;
+    }
+  
+    .Rarrow {
+      background-color: black;
+      position: absolute;
+      margin-top: 51.5%;
+      margin-left: 86%;
+      padding: 2% 5%;
+    }
+  
+    .Arrow {
+      display: none;
+    }
+  
+    .Textcontainer {
+      margin-top: 80%;
+    }
+  
+    .Text1 {
+      font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+      font-size: 150%;
+    }
+  
+    .Para1 {
+      color: lightgray;
+      font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+      font-size: 70%;
+      margin-top: 4%;
+      margin-bottom: 15%;
+      line-height: 150%;
+    }
+  
+    .Shop {
+      text-decoration: none;
+      font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+      color: black;
+      font-size: 70%;
+      letter-spacing: 0.7rem;
+    }
+  
+    .Shoparrow {
+      margin-left: 10%;
+    }
+  
+    .Dark, .White {
+      margin-top: 15%;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .Next {
+      margin-top: 15%;
+    }
+  }
